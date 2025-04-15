@@ -18,13 +18,13 @@ const PhotoResult: React.FC<Props> = ({ image, onRetake }) => {
       <div className="flex justify-center gap-4">
         <button
           onClick={saveToLocal}
-          className="mt-4 bg-gradient-to-r from-[#ff8a8a] to-gray-100 text-black font-semibold py-2 px-4 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition"
+          className="mt-4 bg-gradient-to-r from-[#ff8a8a] to-gray-100 text-black font-semibold py-2 px-4 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition hover:cursor-pointer"
         >
           Save to Local
         </button>
         <button
           onClick={onRetake}
-          className="mt-4 bg-gradient-to-r from-gray-500 to-gray-100 text-black font-semibold py-2 px-4 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition"
+          className="mt-4 bg-gradient-to-r from-gray-500 to-gray-100 text-black font-semibold py-2 px-4 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition hover:cursor-pointer"
 
         >
           Take Again

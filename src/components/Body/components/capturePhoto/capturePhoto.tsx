@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useCamera } from "../../../../hooks/useCamera";
-import PhotoResult from "./photoCapture";
+import PhotoResult from "./photoResult";
 
 
 const PhotoCapture: React.FC = () => {
@@ -30,7 +30,7 @@ const PhotoCapture: React.FC = () => {
           <video ref={videoRef} className="w-full h-full rounded-md" />
           <button
             onClick={handleCapture}
-            className="mt-4 bg-gradient-to-r from-[#ff8a8a] to-gray-100 text-black px-6 py-2 rounded-md"
+            className="mt-4 bg-gradient-to-r from-[#ff8a8a] to-gray-100 text-black px-6 py-2 rounded-md hover:opacity-90 transition hover:cursor-pointer"
           >
             Take Picture
           </button>

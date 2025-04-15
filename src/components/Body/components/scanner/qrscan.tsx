@@ -221,7 +221,7 @@ const hasScannedRef = useRef(false);
           </div>
 
           {scanError && (
-            <div className="bg-red-100 text-red-700 p-2 mt-4 rounded text-center">
+            <div className="bg-red-100 text-red-400 text-sm p-2 mt-4 rounded text-center">
               {scanError}
             </div>
           )}

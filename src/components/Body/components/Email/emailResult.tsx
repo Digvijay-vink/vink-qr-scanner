@@ -12,7 +12,7 @@ const EmailRedirect: React.FC = () => {
       <p className="text-gray-600">Hope you are doing well!</p>
       <button
         onClick={() => navigate("/")}
-        className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+        className="mt-4 bg-white text-black border-2 px-6 py-2 rounded-md hover:bg-gray-400 transition hover:cursor-pointer"
       >
         Go Back Home
       </button>

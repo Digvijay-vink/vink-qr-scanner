@@ -28,11 +28,15 @@ const Footer = () => {
               <ul className="">
                 <a href={"https://www.vink.ai/logistics"}>
                   {" "}
-                  <li className="text-gray-100">Supply Chain & Logistics</li>
+                  <li className="text-gray-100 hover:text-[#6666b5] transition duration-300">
+                    Supply Chain & Logistics
+                  </li>
                 </a>
                 <a href={"https://www.vink.ai/enterprise-security"}>
                   {" "}
-                  <li className="text-gray-100 mt-3">CIO/CISOs</li>
+                  <li className="text-gray-100 mt-3 hover:text-[#6666b5] transition duration-300">
+                    CIO/CISOs
+                  </li>
                 </a>
               </ul>
             </div>
@@ -41,15 +45,20 @@ const Footer = () => {
               <ul>
                 <a href={"https://www.vink.ai/account-research"}>
                   {" "}
-                  <li className="text-gray-100">Solutions</li>
+                  <li className="text-gray-100 hover:text-[#6666b5] transition duration-300">
+                    100 ways to Vink
+                  </li>
                 </a>
               </ul>
             </div>
             <div>
               <p className="py-2 text-gray-400 font-semibold">Company</p>
               <ul>
-                <a href={"https://www.vink.ai/customers"}></a>{" "}
-                <li className="text-gray-100">Customers Stories</li>
+                <a href={"https://www.vink.ai/customers"}>
+                  <li className="text-gray-100 hover:text-[#6666b5] transition duration-300">
+                    Customers Stories
+                  </li>
+                </a>
               </ul>
             </div>
           </div>

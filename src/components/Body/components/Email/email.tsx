@@ -43,7 +43,7 @@ const EmailForm: React.FC = () => {
         {error && <p className="text-red-400 text-sm">{error}</p>}
       </div>
       <button
-        className="w-full mt-4 bg-gradient-to-r from-[#ff8a8a] to-gray-100 text-black font-semibold py-2 px-4 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition"
+        className="w-full mt-4 bg-gradient-to-r from-[#ff8a8a] to-gray-100 text-black font-semibold py-2 px-4 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition hover:cursor-pointer"
         onClick={handleContinue}
       >
         <IoIosSend size={18} /> Continue

@@ -10,7 +10,7 @@ import QRScanner from "./components/scanner/qrscan";
 type Tab = "email" | "photo" | "scan";
 
 const Body: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<Tab>("email");
+  const [activeTab, setActiveTab] = useState<Tab>("scan");
 
   // Cleanup when switching tabs
   useEffect(() => {
@@ -45,8 +45,20 @@ const Body: React.FC = () => {
         {/* Tab Navigation */}
         <div className="flex mb-4">
           <button
+            onClick={() => setActiveTab("scan")}
+            className={`flex items-center gap-1 px-4 py-2 hover:cursor-pointer ${
+              activeTab === "scan"
+                ? "border-b-2 border-[#ff8a8a] text-[#ff8a8a]"
+                : "text-gray-800"
+            }`}
+          >
+            <IoQrCode />
+            <span>Scan</span>
+          </button>
+
+          <button
             onClick={() => setActiveTab("email")}
-            className={`flex items-center gap-1 px-4 py-2 ${
+            className={`flex items-center gap-1 px-4 py-2 hover:cursor-pointer ${
               activeTab === "email"
                 ? "border-b-2 border-[#ff8a8a] text-[#ff8a8a]"
                 : "text-gray-800"
@@ -58,7 +70,7 @@ const Body: React.FC = () => {
 
           <button
             onClick={() => setActiveTab("photo")}
-            className={`flex items-center gap-1 px-4 py-2 ${
+            className={`flex items-center gap-1 px-4 py-2 hover:cursor-pointer ${
               activeTab === "photo"
                 ? "border-b-2 border-[#ff8a8a] text-[#ff8a8a]"
                 : "text-gray-800"
@@ -66,18 +78,6 @@ const Body: React.FC = () => {
           >
             <FaCamera />
             <span>Photo</span>
-          </button>
-
-          <button
-            onClick={() => setActiveTab("scan")}
-            className={`flex items-center gap-1 px-4 py-2 ${
-              activeTab === "scan"
-                ? "border-b-2 border-[#ff8a8a] text-[#ff8a8a]"
-                : "text-gray-800"
-            }`}
-          >
-            <IoQrCode />
-            <span>Scan</span>
           </button>
         </div>
 
